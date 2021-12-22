@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr-Javascript</title>
+</head>
+<body>
+    <h1>I'm Mr. Javascript</h1>
+    <a href="#" class="naber">Hey Javascript, how ya feeling?</a>
+    <a href="#" class="reset">Reset</a>
+    
+    <script type="text/javascript">
+    //aşağıdaki için de aynı şey geçerli:
+    /*var h1 = document.querySelector("h1");
+    h1.innerHTML = "I am Alive!";
+    console.log(h1); */
+
+    /* querySelector'un a etiketi üzerinde kullanımı:
+    var a = document.querySelector("a");
+    a.innerHTML = "I am Alive!";
+    console.log(a); 
+    */
+
+
+    /*addEventListener*/
+        var a = document.querySelector(".naber");
+        a.addEventListener('click',function(){
+            var h1 = document.querySelector("h1");
+            h1.innerHTML = "I am alive!";
+            console.log(h1);
+        });
+
+    // Nasıl Resetleriz?
+        var reset = document.querySelector(".reset");
+        reset.addEventListener('click',function(){
+            var h1 = document.querySelector("h1");
+            h1.innerHTML = "I am Mr.Javascript";
+            console.log(h1);    
+        });
+    </script>
+</body>
+</html>
